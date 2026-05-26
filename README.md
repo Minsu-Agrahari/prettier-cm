@@ -1,4 +1,4 @@
-![prettier-cm Banner](./assets/banner.png)
+![prettier-cm Banner](https://raw.githubusercontent.com/Minsu-Agrahari/prettier-cm/main/assets/Banner.png)
 
 # prettier-cm
 
