@@ -1,33 +1,46 @@
 # prettier-cm
 
-A simple CLI tool to quickly set up Prettier configuration in any project.
+## Introduction
 
-`prettier-cm` creates a ready-to-use `.prettierrc.cjs` and `.prettierignore` file in your project root with a single command.
+`prettier-cm` is a lightweight CLI tool that quickly sets up Prettier configuration in any project.
 
-## Why?
-
-Setting up Prettier manually in every project means repeatedly creating:
+With a single command, it generates:
 
 - `.prettierrc`
 - `.prettierignore`
 
-and copying the same configuration again and again.
+directly inside your project root.
 
-`prettier-cm` automates this process.
+---
+
+## Why prettier-cm?
+
+Setting up Prettier manually for every project usually means:
+
+- Creating configuration files repeatedly
+- Copying the same formatting rules
+- Reusing ignore configurations manually
+
+`prettier-cm` automates this setup and provides a consistent starting configuration instantly.
+
+---
 
 ## Features
 
 - One command setup
-- Creates `.prettierrc.cjs`
+- Creates `.prettierrc`
 - Creates `.prettierignore`
 - Full-stack friendly configuration
 - No manual copy-paste
+- Ready to use in any project
+
+---
 
 ## Installation
 
 No installation required.
 
-Run directly using:
+Run directly:
 
 ```bash
 npx prettier-cm
@@ -39,11 +52,13 @@ Or install globally:
 npm install -g prettier-cm
 ```
 
-Then run:
+Run:
 
 ```bash
 prettier-cm
 ```
+
+---
 
 ## Usage
 
@@ -67,7 +82,7 @@ After:
 project/
 │── src/
 │── package.json
-│── .prettierrc.cjs
+│── .prettierrc
 │── .prettierignore
 ```
 
@@ -83,9 +98,19 @@ Format files:
 npx prettier --write .
 ```
 
+Example workflow:
+
+```bash
+npx prettier-cm
+npm install -D prettier
+npx prettier --write .
+```
+
+---
+
 ## Generated Configuration
 
-### `.prettierrc.cjs`
+### `.prettierrc`
 
 Includes:
 
@@ -98,7 +123,7 @@ Includes:
 
 ### `.prettierignore`
 
-Includes common ignores such as:
+Includes common ignores:
 
 ```text
 node_modules
@@ -108,6 +133,9 @@ build
 coverage
 ```
 
+---
+
 ## License
 
 MIT
+
