@@ -1,3 +1,5 @@
+![prettier-cm Banner](./assets/banner.png)
+
 # prettier-cm
 
 ## Introduction
