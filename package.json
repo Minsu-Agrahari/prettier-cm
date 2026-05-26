@@ -1,36 +1,28 @@
 {
     "name": "prettier-cm",
-    "version": "1.0.1",
-
+    "version": "1.0.2",
     "description": "Reusable Prettier configuration package with standard formatting and ignore rules for modern full-stack projects.",
-
     "main": "prettier.config.cjs",
-
     "bin": {
         "prettier-cm": "bin/init.js"
     },
-
     "files": [
         "bin",
         "prettier.config.cjs",
         ".prettierignore"
     ],
-
     "peerDependencies": {
         "prettier": "^3.0.0"
     },
-
     "keywords": [
         "prettier",
         "formatter",
         "prettier-config",
         "code-style"
     ],
-
     "repository": {
         "type": "git",
         "url": "https://github.com/<username>/prettier-cm.git"
     },
-
     "license": "MIT"
 }
