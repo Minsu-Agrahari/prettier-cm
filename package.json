@@ -1,18 +1,14 @@
 {
     "name": "prettier-cm",
-    "version": "1.0.3",
-
+    "version": "1.0.4",
     "bin": {
         "prettier-cm": "bin/init.js"
     },
-
     "main": "prettier.config.json",
-
     "files": [
         "bin",
         "prettier.config.json",
         ".prettierignore"
     ],
-
     "license": "MIT"
 }
