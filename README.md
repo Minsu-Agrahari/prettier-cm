@@ -1,4 +1,5 @@
-![prettier-cm Banner](https://raw.githubusercontent.com/Minsu-Agrahari/prettier-cm/main/assets/Banner.png)
+<!-- ![prettier-cm Banner](https://raw.githubusercontent.com/Minsu-Agrahari/prettier-cm/main/assets/Banner.png) -->
+![prettier-cm Banner](./assets/tokoyoStyleBanner.png)
 
 # prettier-cm
 
