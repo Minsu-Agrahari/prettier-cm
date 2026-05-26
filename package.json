@@ -4,6 +4,14 @@
     "bin": {
         "prettier-cm": "bin/init.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Minsu-Agrahari/prettier-cm.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Minsu-Agrahari/prettier-cm/issues"
+    },
+    "homepage": "https://github.com/Minsu-Agrahari/prettier-cm/#readme",
     "main": "prettier.config.json",
     "files": [
         "bin",
