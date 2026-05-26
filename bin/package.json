@@ -1,0 +1,11 @@
+{
+    "name": "prettier-cm",
+    "version": "1.0.0",
+    "main": "prettier.config.cjs",
+    "bin": {
+        "prettier-init": "./bin/init.js"
+    },
+    "peerDependencies": {
+        "prettier": "^3.0.0"
+    }
+}
