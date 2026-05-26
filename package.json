@@ -1,6 +1,6 @@
 {
     "name": "prettier-cm",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "bin": {
         "prettier-cm": "bin/init.js"
     },
