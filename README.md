@@ -1,101 +1,113 @@
 # prettier-cm
 
-A Prettier configuration package with opinionated, consistent code formatting rules.
+A simple CLI tool to quickly set up Prettier configuration in any project.
+
+`prettier-cm` creates a ready-to-use `.prettierrc.cjs` and `.prettierignore` file in your project root with a single command.
+
+## Why?
+
+Setting up Prettier manually in every project means repeatedly creating:
+
+- `.prettierrc`
+- `.prettierignore`
+
+and copying the same configuration again and again.
+
+`prettier-cm` automates this process.
+
+## Features
+
+- One command setup
+- Creates `.prettierrc.cjs`
+- Creates `.prettierignore`
+- Full-stack friendly configuration
+- No manual copy-paste
 
 ## Installation
 
-```bash
-npm install --save-dev prettier prettier-cm
-```
+No installation required.
 
-Or using yarn:
+Run directly using:
 
 ```bash
-yarn add --dev prettier prettier-cm
+npx prettier-cm
 ```
 
-Or using pnpm:
+Or install globally:
 
 ```bash
-pnpm add --save-dev prettier prettier-cm
-```
-
-## Quick Start
-
-After installation, run the init command to automatically set up Prettier in your project:
-
-```bash
-npx prettier-init
-```
-
-This command will create the following files in your project root:
-
-- `.prettierrc.cjs` - Prettier configuration file
-- `.prettierignore` - Prettier ignore patterns
-
-## Usage
-
-Once initialized, you can run Prettier commands:
-
-```bash
-# Format all files
-npx prettier --write .
-
-# Check formatting without making changes
-npx prettier --check .
-
-# Format specific files
-npx prettier --write src/
-```
-
-Add scripts to your `package.json` for convenience:
-
-```json
-{
-    "scripts": {
-        "format": "prettier --write .",
-        "format:check": "prettier --check ."
-    }
-}
+npm install -g prettier-cm
 ```
 
 Then run:
 
 ```bash
-npm run format
-npm run format:check
+prettier-cm
 ```
 
-## Configuration
+## Usage
 
-The package includes the following opinionated formatting rules:
+Inside your project:
 
-| Option           | Value    | Description                                                  |
-| ---------------- | -------- | ------------------------------------------------------------ |
-| `tabWidth`       | 4        | Indentation uses 4 spaces                                    |
-| `useTabs`        | false    | Uses spaces instead of tabs                                  |
-| `semi`           | true     | Adds semicolons automatically                                |
-| `singleQuote`    | true     | Uses single quotes instead of double quotes                  |
-| `trailingComma`  | 'es5'    | Adds trailing commas where valid in ES5                      |
-| `printWidth`     | 100      | Maximum line length is 100 characters                        |
-| `bracketSpacing` | true     | Adds spaces inside object brackets                           |
-| `arrowParens`    | 'always' | Always includes parentheses around arrow function parameters |
-| `jsxSingleQuote` | true     | Uses single quotes in JSX                                    |
-| `endOfLine`      | 'lf'     | Uses Unix line endings (LF)                                  |
+```bash
+npx prettier-cm
+```
 
-### Customizing Configuration
+Before:
 
-If you need to override the default configuration, edit `.prettierrc.cjs` in your project root after running `prettier-init`.
+```text
+project/
+│── src/
+│── package.json
+```
 
-## Requirements
+After:
 
-- **Node.js:** 12.0.0 or higher
-- **Prettier:** ^3.0.0
+```text
+project/
+│── src/
+│── package.json
+│── .prettierrc.cjs
+│── .prettierignore
+```
+
+Install Prettier:
+
+```bash
+npm install -D prettier
+```
+
+Format files:
+
+```bash
+npx prettier --write .
+```
+
+## Generated Configuration
+
+### `.prettierrc.cjs`
+
+Includes:
+
+- 4 space indentation
+- Single quotes
+- Semicolons
+- Trailing commas
+- JSX support
+- Markdown / JSON / YAML overrides
+
+### `.prettierignore`
+
+Includes common ignores such as:
+
+```text
+node_modules
+dist
+build
+.next
+coverage
+```
 
 ## License
 
 MIT
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.

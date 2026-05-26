@@ -6,8 +6,8 @@ const path = require('path');
 const root = process.cwd();
 
 fs.copyFileSync(
-    path.join(__dirname, '../prettier.config.cjs'),
-    path.join(root, '.prettierrc.cjs')
+    path.join(__dirname, '../prettier.config.json'),
+    path.join(root, '.prettierrc')
 );
 
 fs.copyFileSync(
@@ -15,4 +15,4 @@ fs.copyFileSync(
     path.join(root, '.prettierignore')
 );
 
-console.log('Prettier setup added');
+console.log('Created .prettierrc and .prettierignore');
