@@ -15,4 +15,4 @@ fs.copyFileSync(
     path.join(root, '.prettierignore')
 );
 
-console.log('Created .prettierrc and .prettierignore');
+console.log('✅ Created .prettierrc and .prettierignore');
